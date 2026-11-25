@@ -1,0 +1,39 @@
+
+### Cadastrar categoria
+POST http://localhost:3000/api/categorias
+Content-Type: application/json
+
+{
+  "nome": "Informática Básica"
+}
+
+### Cadastrar aluno
+POST http://localhost:3000/api/alunos
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "email": "joao.teste@example.com",
+  "telefone": "27999990004"
+}
+
+### Cadastrar curso
+POST http://localhost:3000/api/cursos
+Content-Type: application/json
+
+{
+  "id_categoria": 1,
+  "nome": "Informática Avançada",
+  "descricao": "Curso de conhecimentos avançados de informática.",
+  "carga_horaria": 40,
+  "modalidade": "Online"
+}
+
+### Cadastrar inscrição
+POST http://localhost:3000/api/inscricoes
+Content-Type: application/json
+
+{
+  "id_aluno": 4,
+  "id_curso": 5
+}
